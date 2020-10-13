@@ -1,5 +1,7 @@
 # Rudrata-Finder
-Rudrata Path Finder approximating ride-share problems such as Uber Pool. Capping project for CS 170: Efficient Algorithms and Complexity Theory
+
+## Capping project for CS 170: Efficient Algorithms and Complexity Theory
+Rudrata Path Finder approximating ride-share problems such as Uber Pool.
 
 ## Rudrata.py
 A randomized hamiltonian path finder that finds rudrata path with certain probability, assuming it has one. The approach is similar to the game nibble/snake (or just slither.io) where we simply DFS the graph except we explore with additional rule for probability to visit nodes that we have already visited before. The algorithm exits after a certain number of tries (if the initial visits of the explore is a deadend, we could be stuck). So we run the algorithm multiple times with random restarts and random reversal in addition to exploring. Empirically, we found that most graphs that are reasonably connected will return a rudrata path within one to two seconds.
